@@ -1,0 +1,101 @@
+<html> 
+<head> 
+<title>myself</title>
+<script type="text/javascript">
+function date()
+{var now=new Date(); 
+document.getElementById("date").innerHTML=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear();}
+</script>
+<link type="image/x-icon" rel="shortcut icon" href="icon.ico" />
+<style type="text/css"> 
+html,body { 
+width:100%;
+padding:0px;
+margin:0px; 
+} 
+#up{width:100%;} 
+#middle{line-height:2em; 
+width:100%; 
+height:30px;
+background:pink;
+} 
+#music{width:300px;float:left;}
+#menu{width:900px;float:left;} 
+#main{margin-left:25%;width:50%;}
+#color{background:#da5867;color:#fae7e9;}
+#date{display:inline;width:50px;}
+a{width:200px;
+height:30px;
+float:left;
+color:blue;
+background:pink;
+font-size:20px;
+display:block;
+text-align:center;
+text-decoration:none;}
+a:hover { 
+color: #ff0; 
+background-color: #da5867; 
+} 
+form{display: inline;}
+table{text-align:center;width:100%;}
+</style> 
+</head> 
+<body onload="date()">
+<div id="up">
+<img src="welcome.png" width="100%"/>
+</div>
+<div id="middle"> 
+<div id="music">
+<audio src="I Miss You.mp3" loop="loop" controls="controls" autoplay="autoplay"> </audio>
+</div>
+<div id="menu">
+<a href=#home>Calendar</a>
+<a href=#travel>Travel</a> 
+<a href=#food>Food</a> 
+<a href=#contact>Contact</a>
+<img src="1.png" height="30"/>
+</div>
+<div>
+<h4>Mood:<form>
+<select name="mood">
+<option value="happy">Happy</option>
+<option value="lazy">Lazy</option>
+<option value="lonely" selected="selected">Lonely
+</option>
+<option value="sad">Sad</option>
+</select>
+</form></h4></div>
+</div> 
+<div id="main">
+<p id="home"><h3>Calendar</h3></p>
+<table border="3px" bordercolor="0x4C96FF" >
+<tr> <th rowspan = "6">February</th> <th>Monday</th> <th>Tuesday</th> <th>Wednesday</th> <th>Thursday</th> <th>Friday</th> <th>Saturday</th> <th>Sunday</th> </tr> 
+<tr> <td></td> <td></td> <td>1</td> <td>2<br/>Class</td> <td>3<br/>Meeting</td> <td>4</td> <td>5<br/>Shopping</td> </tr> <tr> <td>6<br/>Class</td> <td>7<br/>Class</td> <td>8<br/>Homework Deadline</td> <td>9<br/>Class</td> <td>10</td> <td>11<br/>KTV</td> <td>12</td> </tr> 
+<tr> <td>13<br/>Class</td> <td>14<br/>Class</td> <td>15</td> <td>16<br/>Class</td> <td>17<br/>Group Project</td> <td>18</td> <td>19<br/>Watching Movie</td> </tr> 
+<tr> <td>20<br/>Class</td> <td>21<br/>Class</td> <td>22<br/>Homework Deadline</td> <td>23<br/>Class</td> <td>24</td> <td>25<br/>Hiking</td> <td>26</td> </tr> 
+<tr> <td>27<br/>Class</td> <td>28<br/>Class</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> </table>
+<p id="travel"><h3>Travel with Me</h3></p>
+<img src="new_york.jpg" width="100%"/>
+<img src="Beijing.jpg" width="100%"/>
+<img src="dc.jpg" width="100%"/>
+<p id="food"><h3>Taste with Me</h3></p> 
+<img src="food.jpg" width="100%"/>
+<img src="food1.jpg" width="100%"/>
+<img src="food2.jpg" width="100%"/>
+<p id="contact"><h3>Contact me</h3></p> 
+<div align="center">Name:<input type="text" name="full name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date:
+<div id="date"></div></div>
+<br/>
+<p align="center">
+<textarea rows="8" cols="80">
+Leave a message.</textarea><br/><br/>
+<button id="color" onclick="send()">Send</button>
+</p>
+<script type="text/javascript">
+function send(){confirm("Thank you for your message!");}
+</script>
+<p align="center">Copyright@Yuchen Tian</P>
+</div> 
+</body> 
+</html> 
